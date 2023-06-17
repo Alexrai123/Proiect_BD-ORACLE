@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  postgresql_data_container:
+    image: 'postgres:14.1-alpine'
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: Mypassword!1
+      POSTGRES_USER: postgres
+      POSTGRES_DB:  LigaRugby
+    ports:
+      - "5432:5432"
+    expose:
+      - "5432"
+
